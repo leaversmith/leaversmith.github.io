@@ -42,7 +42,7 @@
     }
 
     main {
-      width: min(720px, 100%);
+      width: min(880px, 100%);
       text-align: center;
     }
 
@@ -78,7 +78,7 @@
 
     nav {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }
 
@@ -120,7 +120,7 @@
     a.card:hover p,
     a.card:focus-visible p { color: var(--accent); }
 
-    @media (max-width: 560px) {
+    @media (max-width: 640px) {
       nav { grid-template-columns: 1fr; }
     }
   </style>
@@ -139,6 +139,10 @@
       <a class="card" href="https://leaversmith.com/places/">
         <h2>Places</h2>
         <p>Travels, past and planned</p>
+      </a>
+      <a class="card" href="https://leaversmith.com/books/">
+        <h2>Books</h2>
+        <p>What we've been reading</p>
       </a>
     </nav>
   </main>
